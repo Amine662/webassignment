@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .full {
+            width: 50%;
+            max-width: 1000px;
+            min-height: 100px;
+            background-color: blanchedalmond;
+            margin: 0px;
+            display: grid;
+            grid-template-columns: 2fr 4fr;
+            margin: auto;
+        }
+
+        .left {
+            position: initial;
+            background-color:rgb(150, 155, 159);
+            padding: 20px;
+        }
+
+        .right {
+            position: initial;
+            background-color:whitesmoke	;
+            padding: 20px;
+        }
+        .pin{
+            margin: auto;
+            font-size:medium;
+        }
+        .pin2{
+            font-size: large;
+            margin:auto;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .hyp{
+            font-size: large;
+            margin: auto;
+        }
+
+        .image,
+        .Contact,
+        .Skills,
+        .Language,
+        .Hobbies,
+        .title,
+        .Summary,
+        .Experience,
+        .Education,
+        .project {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            background-color:rgb(150, 155, 159);
+            padding: 5px;
+            color: white;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color:white;
+            color:black;
+        }
+        .h3{
+            margin:auto;
+            font-size: medium;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="full">
+        <div class="left">
+            <div class="image">
+                <img src="karim.jpg" alt="img" style="width:100px;height:100px;">
+            </div>
+            <div class="Contact">
+                <h2>Contact</h2>
+                <p><b>Email id:</b> Lapresse@gmail.com</p>
+                <p><b>Phone Number :</b> 1234567890</p>
+            </div>
+            <div class="Skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><b>Programming Languages : Python, Java, C++</b></li>
+                    <li><b>Frontend : HTML5, CSS3, JavaScript, React</b></li>
+                    <li><b>Backend : Node.js,Python</b></li>
+                </ul>
+            </div>
+            <div class="Language">
+                <h2>Language</h2>
+                <ul>
+                    <li class="pin2">English</li>
+                    <li class="pin2">Arabic</li>
+                    <li class="pin2">French</li>
+                </ul>
+            </div>
+            <div class="Hobbies">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li class="pin2">Table tennis</li>
+                    <li class="pin2">Video games</li>
+                    <li class="pin2">Trolling</li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="name">
+                <h1>Kamel La Presse</h1>
+            </div>
+            <div class="title">
+                <p>Computer Science Student </p>
+            </div>
+            <div class="Summary">
+                <h2>Summary</h2>
+                <p>Engineering student with a passion for problem-solving and software development.</p>
+            </div>
+            <div class="Experience">
+                <h2>Experience</h2>
+                <h3>Freelance Webdeveloper</h3>
+                <p>January 2022 to Present</p>
+                <ul>
+                    <li>Actively engaged in web creative design and development.</li>
+                    <li>Designing project & planning</li>
+                </ul>
+                <h3>Competitive Programmer </h3>
+                <p> 2021 to  present</p>
+                <ul>
+                    <li class="pin">Actively engaged in Competitive programming contests.</li>
+                    <li class="pin">Problem solver and setter</li>
+                </ul>
+            </div>
+            <div class="Education">
+                <h2>Education</h2>
+                <table>
+                    <tr>
+                        <th>University/college </th>
+                        <th>Passing year </th>
+                    </tr>
+                    <tr>
+                        <td>Monastir Preparatory school</td>
+                        <td>2023</td>
+                    </tr>
+                    <tr>
+                        <td>National School of Computer Science</td>
+                        <td>2026</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="project">
+                <ul>
+                    <li>
+                        <h2 class="hyp">Project1</h2>
+                        <h3 class="h3">Restaurant website</h3>
+                        <p>This project is based on html & used React</p>
+                    </li>
+                    <li>
+                        <h2 class="hyp">Project2</h2>
+                        <h3 class="h3">Maze Solver Robot</h3>
+                        <p>This project is based on Arduino IDE and C++</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
